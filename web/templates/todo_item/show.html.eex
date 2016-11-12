@@ -1,0 +1,23 @@
+<h2>Show todo item</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @todo_item.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @todo_item.description %>
+  </li>
+
+  <li>
+    <strong>Is done:</strong>
+    <%= @todo_item.is_done %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: todo_item_path(@conn, :edit, @todo_item) %>
+<%= link "Back", to: todo_item_path(@conn, :index) %>
